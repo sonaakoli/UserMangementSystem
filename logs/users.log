@@ -1,0 +1,35 @@
+2025-12-27T11:58:43.282+05:30  INFO 13008 --- [User-Management-System] [restartedMain] c.s.UserManagementSystemApplication      : Starting UserManagementSystemApplication using Java 21.0.8 with PID 13008 (C:\Users\Sonali Koli\Desktop\Sonalis projects\UserManagementSystem\target\classes started by Sonali Koli in C:\Users\Sonali Koli\Desktop\Sonalis projects\UserManagementSystem)
+2025-12-27T11:58:43.287+05:30  INFO 13008 --- [User-Management-System] [restartedMain] c.s.UserManagementSystemApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-12-27T11:58:43.402+05:30  INFO 13008 --- [User-Management-System] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-27T11:58:43.403+05:30  INFO 13008 --- [User-Management-System] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-27T11:58:44.714+05:30  INFO 13008 --- [User-Management-System] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-27T11:58:44.838+05:30  INFO 13008 --- [User-Management-System] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interface.
+2025-12-27T11:58:45.915+05:30  INFO 13008 --- [User-Management-System] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-12-27T11:58:45.947+05:30  INFO 13008 --- [User-Management-System] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-27T11:58:45.948+05:30  INFO 13008 --- [User-Management-System] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-12-27T11:58:46.032+05:30  INFO 13008 --- [User-Management-System] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-27T11:58:46.033+05:30  INFO 13008 --- [User-Management-System] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2629 ms
+2025-12-27T11:58:46.389+05:30  INFO 13008 --- [User-Management-System] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-27T11:58:46.525+05:30  INFO 13008 --- [User-Management-System] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-12-27T11:58:46.608+05:30  INFO 13008 --- [User-Management-System] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-27T11:58:47.195+05:30  INFO 13008 --- [User-Management-System] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-27T11:58:47.255+05:30  INFO 13008 --- [User-Management-System] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-27T11:58:48.056+05:30  INFO 13008 --- [User-Management-System] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b0f8cc7
+2025-12-27T11:58:48.060+05:30  INFO 13008 --- [User-Management-System] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-27T11:58:48.144+05:30  WARN 13008 --- [User-Management-System] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-27T11:58:48.147+05:30  WARN 13008 --- [User-Management-System] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-12-27T11:58:48.186+05:30  INFO 13008 --- [User-Management-System] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-27T11:58:49.494+05:30  INFO 13008 --- [User-Management-System] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-27T11:58:49.566+05:30  INFO 13008 --- [User-Management-System] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-27T11:58:50.067+05:30  WARN 13008 --- [User-Management-System] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-27T11:58:50.697+05:30  INFO 13008 --- [User-Management-System] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-27T11:58:50.740+05:30  INFO 13008 --- [User-Management-System] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-12-27T11:58:50.752+05:30  INFO 13008 --- [User-Management-System] [restartedMain] c.s.UserManagementSystemApplication      : Started UserManagementSystemApplication in 8.4 seconds (process running for 9.265)
+2025-12-27T12:07:10.031+05:30  WARN 13008 --- [User-Management-System] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m51s771ms362µs800ns).
