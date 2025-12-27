@@ -2,6 +2,7 @@ package com.shonali.controller;
 
 import java.util.List;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +19,7 @@ import com.shonali.model.User;
 import com.shonali.service.UserService;
 
 @RestController
+@Slf4j
 public class UserController {
 	
 	@Autowired
@@ -27,6 +29,7 @@ public class UserController {
 	public ResponseEntity<?> saveUser(@RequestBody User user){
 		
 		User saveUser = userService.saveUser(user);
+		log.info("user Request accepted with id: {}",user.getId());
 		
 		if(ObjectUtils.isEmpty(saveUser)) {
 			return new ResponseEntity<>("user not saved",HttpStatus.INTERNAL_SERVER_ERROR);
@@ -37,6 +40,8 @@ public class UserController {
 	@GetMapping("/getUsers")
 	public ResponseEntity<?> getAllUser(){
 		List<User> allUsers = userService.getAllUser();
+		log.info("All users get");
+
 		return new ResponseEntity<>(allUsers,HttpStatus.OK);
 		
 	}
@@ -44,15 +49,18 @@ public class UserController {
 	public ResponseEntity<?> updateUser(@RequestBody User user){
 		
 		User saveUser = userService.saveUser(user);
+
 		
 		if(ObjectUtils.isEmpty(saveUser)) {
 			return new ResponseEntity<>("user not updated",HttpStatus.INTERNAL_SERVER_ERROR);
+
 		}
 		return new ResponseEntity<>(saveUser, HttpStatus.CREATED);
 	}
 	@DeleteMapping("/delete/{id}")
 	public ResponseEntity<?> deleteUser(@PathVariable Integer id){
 		userService.deleteUser(id);
+		log.error("user not found with id: {}",id);
 		return new ResponseEntity<>("Delete Successfully!",HttpStatus.OK);
 	}
 	
